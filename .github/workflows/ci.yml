@@ -12,4 +12,6 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt pytest
       - name: Run Test Suite
+        env:
+          PYTHONPATH: .
         run: pytest tests/
