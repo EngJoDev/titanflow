@@ -1,0 +1,19 @@
+# TitanFlow Enterprise Gateway Configuration
+gateway:
+  host: "0.0.0.0"
+  port: 8080
+  proxy_port: 8081
+
+semantic_cache:
+  enabled: true
+  similarity_threshold: 0.70
+  vector_engine: "simd-hybrid"
+
+guardrails:
+  enforce_jailbreak_filter: true
+  mask_pii: true
+  audit_logging: true
+
+ebpf_telemetry:
+  enabled: true
+  sample_rate_us: 1000
